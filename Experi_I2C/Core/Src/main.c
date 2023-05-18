@@ -35,7 +35,8 @@ static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
 
 int ret;
-char dataBuffer[] = "Ola tudo bem??";
+char dataBuffer[] = "Ola aqui fala o STM32!";
+uint8_t receive_message_from_Arduino[14];
 static const uint8_t arduino_addr = 0x04;
 
 
@@ -59,14 +60,44 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   MX_I2C1_Init();
+  uint8_t buf[22];
+  //uint8_t buf[26];
+  strcpy((char*)buf,"Oi!\r\n");
+
 
   while (1)
+	  /*We have 5 parameters:
+	   * - hi2c1- it is a handler that contains all information about the specied I2C
+	   * - arduino adress was shifted left since here the adress of device should have only 7 bit
+	   * - dataBuffer- pointer to data buffer, should be an unsigned char
+	   * - the amount of data- here i am sending 14 chars(you can put up to 65535, but more that 14 in this case you have garbage in arduino serial port!). since it's uint16_t, we can send 65 536 diferent values.Max size is 65536
+	   * - Timeout duration, before give up, HAL_MAX_DELAY, it's something like 50 days...	   *
+	   */
   {
+
 	  //Attention: arduino_address was shifted one bit left since in documentation HAL_I2C_Master_Transmit function it is stated that:
 	  //- DevAddress: Target device address: The device 7 bits address value in datasheet must be shifted to the
 	  // left before calling the interface
-	  ret = HAL_I2C_Master_Transmit(&hi2c1,(arduino_addr << 1), (uint8_t *)dataBuffer,14,100);
+
+
+	  ret = HAL_I2C_Master_Transmit(&hi2c1,(arduino_addr << 1), (uint8_t *)dataBuffer,22,HAL_MAX_DELAY);
+	  if(ret != HAL_OK){
+		  strcpy((char*)buf,"Error Tx\r\n");
+	  }else{
+		  ret = HAL_I2C_Master_Receive(&hi2c1, (arduino_addr << 1) , (uint8_t *) receive_message_from_Arduino, 22, HAL_MAX_DELAY);
+		  if(ret != HAL_OK){
+			  strcpy((char*)buf,"Error Rx\r\n");
+		  }else{
+
+			  strcpy((char*)buf,receive_message_from_Arduino);
+
+		  }
+	  }
+	  HAL_UART_Transmit(&huart2,buf,strlen((char*)buf),HAL_MAX_DELAY);
+
 	  HAL_Delay(500);
+
+
 
 
   }

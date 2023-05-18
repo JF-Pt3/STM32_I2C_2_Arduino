@@ -564,3 +564,1257 @@ arm-none-eabi-size   Experi_I2C.elf
   10968	     36	   1724	  12728	   31b8	Experi_I2C.elf
 Finished building: default.size.stdout
  
+19:48:30 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:75:84: warning: unsigned conversion from 'int' to 'uint16_t' {aka 'short unsigned int'} changes value from '70000' to '4464' [-Woverflow]
+   75 |    ret = HAL_I2C_Master_Transmit(&hi2c1,(arduino_addr << 1), (uint8_t *)dataBuffer,70000,HAL_MAX_DELAY);
+      |                                                                                    ^~~~~
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  10972	     36	   1724	  12732	   31bc	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+19:48:57 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  10968	     36	   1724	  12728	   31b8	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+19:49:21 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  10972	     36	   1724	  12732	   31bc	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+19:49:32 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  10972	     36	   1724	  12732	   31bc	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+19:49:40 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  10972	     36	   1724	  12732	   31bc	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+19:49:47 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:75:84: warning: unsigned conversion from 'int' to 'uint16_t' {aka 'short unsigned int'} changes value from '65536' to '0' [-Woverflow]
+   75 |    ret = HAL_I2C_Master_Transmit(&hi2c1,(arduino_addr << 1), (uint8_t *)dataBuffer,65536,HAL_MAX_DELAY);
+      |                                                                                    ^~~~~
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  10968	     36	   1724	  12728	   31b8	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+19:50:03 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  10968	     36	   1724	  12728	   31b8	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+19:50:11 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10968	     36	   1724	  12728	   31b8	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+20:24:54 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:81:5: warning: '__builtin_memcpy' writing 20 bytes into a region of size 19 overflows the destination [-Wstringop-overflow=]
+   81 |     strcpy((char*)buf,"Hello from STM32!\r\n");
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13292	     36	   1740	  15068	   3adc	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+20:26:54 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:81:5: warning: '__builtin_memcpy' writing 20 bytes into a region of size 19 overflows the destination [-Wstringop-overflow=]
+   81 |     strcpy((char*)buf,"Hello from STM32!\r\n");
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13292	     36	   1740	  15068	   3adc	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+20:28:14 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:63:11: warning: unused variable 'buf' [-Wunused-variable]
+   63 |   uint8_t buf[19];///Hello from STM32!
+      |           ^~~
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13248	     36	   1740	  15024	   3ab0	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+20:28:25 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13248	     36	   1740	  15024	   3ab0	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+20:28:57 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13248	     36	   1740	  15024	   3ab0	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+20:31:04 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13244	     36	   1740	  15020	   3aac	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+20:31:13 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13244	     36	   1740	  15020	   3aac	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+20:34:08 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13220	     36	   1740	  14996	   3a94	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+20:34:12 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13220	     36	   1740	  14996	   3a94	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+20:37:20 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:79:95: error: expected ';' before 'HAL_UART_Transmit'
+   79 |    HAL_I2C_Master_Receive(&hi2c1, (arduino_addr << 1) , receive_message_from_Arduino, 50, 100)
+      |                                                                                               ^
+      |                                                                                               ;
+......
+   83 |     HAL_UART_Transmit(&huart2,receive_message_from_Arduino,1,HAL_MAX_DELAY);
+      |     ~~~~~~~~~~~~~~~~~                                                                          
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:37:27 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13208	     36	   1740	  14984	   3a88	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+20:37:33 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13208	     36	   1740	  14984	   3a88	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+20:43:56 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  10968	     36	   1724	  12728	   31b8	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+20:44:02 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10968	     36	   1724	  12728	   31b8	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+20:44:16 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10968	     36	   1724	  12728	   31b8	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+09:02:35 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  12680	     36	   1740	  14456	   3878	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+09:02:39 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12680	     36	   1740	  14456	   3878	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+09:06:33 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  12680	     36	   1740	  14456	   3878	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+09:06:37 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12680	     36	   1740	  14456	   3878	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+11:22:37 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13260	     36	   1740	  15036	   3abc	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+11:22:43 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13260	     36	   1740	  15036	   3abc	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+11:42:03 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13260	     36	   1740	  15036	   3abc	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+11:42:08 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13260	     36	   1740	  15036	   3abc	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+11:42:53 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13260	     36	   1740	  15036	   3abc	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+11:43:35 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13260	     36	   1740	  15036	   3abc	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+11:43:44 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13260	     36	   1740	  15036	   3abc	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+11:44:22 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13256	     36	   1740	  15032	   3ab8	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+11:44:32 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13256	     36	   1740	  15032	   3ab8	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+11:45:29 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  12704	     36	   1740	  14480	   3890	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+11:45:46 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12704	     36	   1740	  14480	   3890	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+11:47:58 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  12712	     36	   1740	  14488	   3898	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+11:48:04 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12712	     36	   1740	  14488	   3898	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+12:12:08 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13252	     36	   1740	  15028	   3ab4	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+12:12:12 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13252	     36	   1740	  15028	   3ab4	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+12:12:53 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  11536	     36	   1724	  13296	   33f0	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+12:12:58 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11536	     36	   1724	  13296	   33f0	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+12:13:58 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  11552	     36	   1740	  13328	   3410	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+12:14:04 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11552	     36	   1740	  13328	   3410	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+12:14:24 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  11516	     36	   1740	  13292	   33ec	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+12:14:29 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11516	     36	   1740	  13292	   33ec	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+12:16:34 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13220	     36	   1740	  14996	   3a94	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+12:16:39 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13220	     36	   1740	  14996	   3a94	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+12:18:10 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13228	     36	   1740	  15004	   3a9c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+12:18:14 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13228	     36	   1740	  15004	   3a9c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+12:19:22 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13228	     36	   1740	  15004	   3a9c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+12:19:26 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13228	     36	   1740	  15004	   3a9c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+12:22:41 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  12500	     36	   1740	  14276	   37c4	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+12:22:45 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12500	     36	   1740	  14276	   37c4	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+12:48:30 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13232	     36	   1740	  15008	   3aa0	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+12:48:36 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13232	     36	   1740	  15008	   3aa0	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+12:49:20 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13232	     36	   1740	  15008	   3aa0	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+12:49:24 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13232	     36	   1740	  15008	   3aa0	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+14:30:49 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:95:26: error: 'amp' undeclared (first use in this function)
+   95 |    if (HAL_I2C_GetError(&amp,hi2c1) != HAL_I2C_ERROR_AF)
+      |                          ^~~
+../Core/Src/main.c:95:26: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:95:8: error: too many arguments to function 'HAL_I2C_GetError'
+   95 |    if (HAL_I2C_GetError(&amp,hi2c1) != HAL_I2C_ERROR_AF)
+      |        ^~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:363,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h:632:10: note: declared here
+  632 | uint32_t HAL_I2C_GetError(I2C_HandleTypeDef *hi2c);
+      |          ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:107:8: error: too many arguments to function 'HAL_I2C_GetError'
+  107 |    if (HAL_I2C_GetError(&amp,hi2c1) != HAL_I2C_ERROR_AF)
+      |        ^~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:363,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h:632:10: note: declared here
+  632 | uint32_t HAL_I2C_GetError(I2C_HandleTypeDef *hi2c);
+      |          ^~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:43:56 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13236	     36	   1740	  15012	   3aa4	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+14:44:47 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13236	     36	   1740	  15012	   3aa4	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+14:52:10 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:25: warning: pointer targets in passing argument 2 of 'sprintf' differ in signedness [-Wpointer-sign]
+  101 |      sprintf((char*)buf,receive_message_from_Arduino);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:22:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\stdio.h:244:32: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |                                ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  15964	    136	   1760	  17860	   45c4	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+14:52:17 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15964	    136	   1760	  17860	   45c4	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+14:53:58 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:25: warning: pointer targets in passing argument 2 of 'sprintf' differ in signedness [-Wpointer-sign]
+  101 |      sprintf((char*)buf,receive_message_from_Arduino);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:22:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\stdio.h:244:32: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |                                ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  15940	    136	   1760	  17836	   45ac	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+14:54:01 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15940	    136	   1760	  17836	   45ac	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+14:56:45 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+  101 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13356	     36	   1740	  15132	   3b1c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+14:57:24 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+  101 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+14:57:29 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+15:01:30 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:25: warning: pointer targets in passing argument 2 of 'sprintf' differ in signedness [-Wpointer-sign]
+  100 |      sprintf((char*)buf,receive_message_from_Arduino);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:22:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\stdio.h:244:32: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |                                ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  15964	    136	   1760	  17860	   45c4	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+15:01:32 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15964	    136	   1760	  17860	   45c4	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+15:02:11 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+  101 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+15:02:15 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+15:04:35 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+  101 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13356	     36	   1740	  15132	   3b1c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+15:04:37 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13356	     36	   1740	  15132	   3b1c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+15:05:48 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+  101 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+15:05:51 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+15:25:40 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+   99 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+15:26:08 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+15:26:13 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+15:27:11 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+   99 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+15:27:16 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+15:28:10 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+   99 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+15:28:15 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+15:31:15 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+  100 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+15:31:18 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13380	     36	   1740	  15156	   3b34	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+15:32:51 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+  100 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13380	     44	   1740	  15164	   3b3c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+15:32:55 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13380	     44	   1740	  15164	   3b3c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+15:44:09 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:63:8: error: array size missing in 'buf'
+   63 |   char buf[];
+      |        ^~~
+../Core/Src/main.c:101:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+  101 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+../Core/Src/main.c:105:30: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  105 |    HAL_UART_Transmit(&huart2,buf,strlen((char*)buf),HAL_MAX_DELAY);
+      |                              ^~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:44:27 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+  100 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13380	     44	   1740	  15164	   3b3c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+15:44:33 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13380	     44	   1740	  15164	   3b3c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+15:45:13 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+  100 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13380	     44	   1740	  15164	   3b3c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+15:45:16 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13380	     44	   1740	  15164	   3b3c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+15:46:57 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:92:24: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+   92 |      strcpy((char*)buf,receive_message_from_Arduino);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.12.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:38:34: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                                  ^
+arm-none-eabi-gcc -o "Experi_I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JF\3D Objects\STM_32_I2C\Experi_I2C\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Experi_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Experi_I2C.elf
+ 
+arm-none-eabi-size   Experi_I2C.elf 
+arm-none-eabi-objdump -h -S  Experi_I2C.elf  > "Experi_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  13380	     44	   1740	  15164	   3b3c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Experi_I2C.list
+ 
+15:47:07 **** Incremental Build of configuration Debug for project Experi_I2C ****
+make -j16 all 
+arm-none-eabi-size   Experi_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13380	     44	   1740	  15164	   3b3c	Experi_I2C.elf
+Finished building: default.size.stdout
+ 
